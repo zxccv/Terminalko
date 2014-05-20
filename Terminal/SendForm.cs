@@ -103,6 +103,12 @@ namespace Terminal
                 dta.Data = (byte)13;
                 dta.InOut = Samoyloff.Terminal.INOUT.OUT;
                 ((MainForm)(DockPanel.Parent)).TerminalData.Add(dta);
+
+                //Костыль
+                dta = new Samoyloff.Terminal.TerminalData();
+                dta.Data = (byte)10;
+                dta.InOut = Samoyloff.Terminal.INOUT.OUT;
+                ((MainForm)(DockPanel.Parent)).TerminalData.Add(dta);
             }
 
             
